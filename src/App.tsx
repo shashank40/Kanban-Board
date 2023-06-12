@@ -1,12 +1,15 @@
 import './App.css'
 
+import Board from './components/Board'
+
 function App() {
 
   return (
     <>
-      <header>
+      <header className='Header'>
         <h1>Kanban Board</h1>
       </header>
+      <Board />
 
     </>
   )
