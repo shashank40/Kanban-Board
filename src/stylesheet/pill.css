@@ -1,0 +1,13 @@
+.pill{
+    width: fit-content;
+    max-width: 100px;
+    height: fit-content;
+    border-radius: 8px;
+    background-color: pink;
+    padding: 3px;
+    margin: 2px;
+}
+.pill text{
+    font-size: small;
+    font-weight: 600;
+}

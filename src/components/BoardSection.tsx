@@ -1,16 +1,24 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { fasolif,  } from '@fortawesome/fontawesome-free-solid'
+import Card from './Card';
 
+import { BsGripHorizontal } from 'react-icons/bs';
 import '../stylesheet/board-section.css'
 
 function BoardSection(): JSX.Element {
 
     return (
         <>
-            <div className="BoardSection"> 
-            <span className='BoardSectionHeader'> Todo </span>
-            {/* <FontAwesomeIcon icon="fa-solid fa-file-plus" style={{color: "#02e351",}} /> */}
+        <div className='BoardSection'>
+            <div className="BoardSectionHead"> 
+                <span className='BoardSectionHeader'> Todo </span>
+                <BsGripHorizontal style={{color: "black",}} className="DeleteButton"/>
             </div>
+            <div>
+                <button className="AddCardButton"> + Add Card</button>
+            </div>
+            <div className="BoardSectionBody">
+                <Card/>
+            </div>
+        </div>
         </>
     )
 }
